@@ -8,6 +8,8 @@ app.get('/test', (_, res) => {
 });
 
 app.get('/error', (_, res) => {
+  console.log('error');
+  process.exit();
   throw new Error('test');
 });
 
