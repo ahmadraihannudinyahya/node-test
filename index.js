@@ -9,7 +9,7 @@ app.get('/test', (_, res) => {
 
 app.get('/error', (_, res) => {
   console.log('error');
-  process.exit();
+  process.exit(2);
   throw new Error('test');
 });
 
